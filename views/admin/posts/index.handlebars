@@ -1,0 +1,75 @@
+
+
+
+
+<div class="container">
+    <div class="alert alert-secondary text-center">
+        <h1>All Posts </h1>
+    </div>
+    <table class="table table-bordered">
+        <thead class="bg-primary">
+
+            <tr class="text-white text-center">
+               
+                <th>Title</th>
+                <th>Description</th>
+                <th>Status</th>
+                <th>Category</th>
+                <th colspan="2">Actions</th>
+            </tr>
+
+
+        </thead>
+        <tbody>
+            {{#if Posts}}
+            {{#each Posts }}
+
+           
+
+
+            <tr class="text-center ">
+                
+                
+                <td>{{this.title}}</td>
+                <td>{{this.description}}</td>
+                <td>{{this.status}}</td>
+                <td>{{this.category.title}}</td>
+                
+                
+                <td colspan="2"><a href="/admin/posts/edit/{{this._id}}" class="btn btn-warning">Edit</a>  <a href="/admin/posts/delete/{{this._id}}" class="btn btn-danger">Delete</a></td>
+            
+
+
+            </tr>
+                
+            {{/each}}
+              
+                
+            {{else}}
+            <h2>No Posts </h2>
+                
+            {{/if}}
+                
+          
+            
+            
+
+        </tbody>
+
+
+
+
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+</div>
