@@ -33,7 +33,7 @@
   },
   "devDependencies": {
     "@types/connect-flash": "0.0.35",
-    "handlebars": "^4.7.6",
+    "handlebars": "^4.7.7",
     "nodemon": "^2.0.3"
   },
   "engines":{
